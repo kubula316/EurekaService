@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
-COPY --from=build /target/eureka-0.0.1-SNAPSHOT.jar demo.jar
+COPY --from=build /app/target/eureka-0.0.1-SNAPSHOT.jar demo.jar
 EXPOSE 8761
-ENTRYPOINT ["java", "-jar","EurekaService.jar"]
+ENTRYPOINT ["java", "-jar","demo.jar"]
