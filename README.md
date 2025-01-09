@@ -1,3 +1,3 @@
-Część aplikacji webowej kursów dla studentów:
+Part of the Web Application for Student Courses:
 
-Serwis ten jest odpowiedzialny za rejestracje wszystkich innych serwisów w celu umiożliwienia im komunikacji za pomocą gatewaya i fegin clienta.
+This service is responsible for registering all other services to enable their communication via the gateway and Feign client.
